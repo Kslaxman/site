@@ -1,0 +1,26 @@
+/* SRH-inspired unified CSS custom properties — darker orange */
+:root {
+    --spc-bg-0: #FFFFFF;
+    --spc-bg-1: #F5F5F7;
+    --spc-primary: #1A1A2E;
+    --spc-primary-light: #2D2D44;
+    --spc-secondary: #E65100;
+    --spc-secondary-light: #FF8F00;
+    --spc-accent: #E65100;
+    --spc-accent-light: #FFF3E0;
+    --spc-accent-dark: #BF360C;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --spc-bg-0: #0D0D1A;
+        --spc-bg-1: #1A1A2E;
+        --spc-primary: #F5F5F7;
+        --spc-primary-light: #FFFFFF;
+        --spc-secondary: #E65100;
+        --spc-secondary-light: #FF8F00;
+        --spc-accent: #E65100;
+        --spc-accent-light: #FFD9B3;
+        --spc-accent-dark: #BF360C;
+    }
+}
