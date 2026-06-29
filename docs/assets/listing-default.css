@@ -1,0 +1,113 @@
+/* title */
+
+/* remove styling from title block partial */
+#title-block-header, #title-block-header-title {
+  all: unset;
+  background-image: none !important;
+}
+
+/* page title  */
+#title-block-header.quarto-title-block.default .quarto-title .title {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+/* text below page title */
+.description p {
+  text-align: center; 
+  margin: 0 1em 2em 1em;
+  padding: 0 0 1em 0;
+}
+
+.description a {
+  text-decoration: underline !important;
+}
+
+.description a:hover {
+  text-decoration: none !important;
+}
+
+/* listing cards  */
+.card {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img, .card-img-top, .thumbnail img {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card-img-top img, .card-img img, .thumbnail img {
+    height: 220px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+/* ================================================
+   iPad (≤1024px)
+   ================================================ */
+@media screen and (max-width: 1024px) {
+  #title-block-header.quarto-title-block.default .quarto-title .title {
+    font-size: 2.2em;
+  }
+
+  .description p {
+    margin: 0 1em 1.5em 1em;
+    padding: 0 0 1em 0;
+  }
+}
+
+/* ================================================
+   Tablet (≤768px)
+   ================================================ */
+@media screen and (max-width: 768px) {
+  #title-block-header.quarto-title-block.default .quarto-title .title {
+    font-size: 1.8em;
+  }
+
+  .description p {
+    margin: 0 0.5em 1em 0.5em;
+    padding: 0 0 0.5em 0;
+    font-size: 0.95em;
+  }
+
+  /* Listing items: tighter image alignment */
+  .quarto-listing-default .listing-item {
+    flex-direction: column !important;
+  }
+
+  .quarto-listing-default .listing-item .thumbnail {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+/* ================================================
+   Mobile (≤576px)
+   ================================================ */
+@media screen and (max-width: 576px) {
+  #title-block-header.quarto-title-block.default .quarto-title .title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .description p {
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0 0 0.5em 0;
+    font-size: 0.9em;
+  }
+
+  .card {
+    border-radius: 6px;
+  }
+
+  /* Grid listings: single column */
+  .quarto-listing-cols-3 .list-group-item,
+  .quarto-grid-item {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}

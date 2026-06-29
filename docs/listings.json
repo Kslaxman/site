@@ -1,0 +1,27 @@
+[
+  {
+    "listing": "/about.html",
+    "items": [
+      "/project/instacart-bayesian-analysis/index.html",
+      "/project/Medicaid/index.html",
+      "/project/sql-subscription-analysis/index.html",
+      "/project/arizona-election-2024/index.html"
+    ]
+  },
+  {
+    "listing": "/project/index.html",
+    "items": [
+      "/project/arizona-election-2024/index.html",
+      "/project/Medicaid/index.html",
+      "/project/instacart-bayesian-analysis/index.html",
+      "/project/sql-subscription-analysis/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/project/instacart-bayesian-analysis/index.html",
+      "/project/Medicaid/index.html"
+    ]
+  }
+]
